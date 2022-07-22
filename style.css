@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    width: 400px;
+    height: auto;
+}
+
+.card .top {
+    height: 30%;
+    width: 100%;
+}
+
+.top img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .bottom {
+    height: 70%;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    margin-top: -5px;
+}
+
+.bottom img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px hsl(180, 1%, 70%);
+    border: 8px solid white;
+}
+
+.bottom h3 {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 24px;
+    color: hsl(229, 23%, 23%);
+}
+
+.bottom h3 span {
+    color: hsl(0, 0%, 59%);
+    font-size: 20px;
+    margin-left: 6px;
+}
+
+.bottom .city {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.bottom .line {
+    width: 100%;
+    height: 1px;
+    background: hsl(180, 1%, 70%);
+    margin: 40px 0;
+}
+
+.bottom .footer {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 22px;
+}
+
+.bottom .footer .item {
+    display: inline-block;
+    margin: -16px 22px;
+    text-align: center;
+}
+
+.bottom .footer .item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+}
+
+.bottom .footer .item span {
+    color: hsl(180, 1%, 70%);
+    font-size: 16px;
+}
+
+.svg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width:700px) {
+   
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .svg-top {
+        display: none;
+    }
+
+    .bottom .footer {
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
+    }
+}
